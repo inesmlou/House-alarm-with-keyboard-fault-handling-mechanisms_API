@@ -1,0 +1,24 @@
+Database of parameters using in Petri Toolbox 
+
+A -	adjacency matrix
+B - 	matrix of IB states (invariant behaviour - instantaneous firing speeds remain constant during delta period)
+	j-th column of B corresponds to j-th IB state (representing the marking at the begining of delta period)
+C - 	incidence matrix
+D -	row vector of delta periods (j-th entry of D corresponds to the j-th IB state)
+RM - 	matrix of all reachable markings
+M0 - 	initial marking of net
+M -	marking of the STPN on the end of simulation
+P - 	matrix of P-invariants 
+Pre -	matrix od pre-conditions
+PrioT - 	priority of transition; 0 indicates no priority (or lowest priority)
+Post - 	matrix of post-conditions
+Seq - 	the two row matrix of firing sequence (1st row - tick, 2nd row - transition fired)
+ticks -	integer number of simulation ticks
+TimeT -	column vector of time, associated to the transitions
+TypeT -	column vector of transitions types :
+                    0  -  Zero timed transition
+                    1  -  Timed transition
+                    2  -  Stochastic time transition with unifom distribution
+V - 	column vector of maximal firing speeds associated to the transitions
+VV -	j-th column of matrix VV corresponds to instantaneous firing speeds during j-th IB state
+XX -	matrix of information needful for construction a graph of reachable markings
